@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         font: normal 20pt Arial; 
+         color: rgb(255, 0, 128);   
+        }
+
+        
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt ("Qual é o seu nome? ")
+        document.write (`Olá <strong>${nome},</strong> seu nome tem ${nome.length} letras <br/>`)//nome.length conta as letras da variavel
+        document.write (`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>` )// escreve nome em letras maiusculas
+        document.write (`Seu nome em minúsculas é ${nome.toLowerCase()}`)// escreve nome em letras minusculas
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do IF e ELSE</title>
+</head>
+<body>
+    <h1> Verificador de estrangeiros</h1>
+    Seu país é: <input type="text" name= "txtpais" id= "txtpais" > 
+    <input type= "button" value= "Verificar" onclick=  "calcular()" > 
+    <div id= "res">
+
+        </div>
+
+        <script>
+         function calcular(){
+         
+         var a =  parseFloat(window.document.querySelector("input#txtpais").value)
+         var res= window.document.querySelector("div#res")
+         
+        
+          if (a == "Brasil"){
+              res.innerHTML = `<p> Você é Brasileiro!</p>`
+          }
+          else{
+              res.innerHTML = `<p> Você é Estrangeiro!</p>`
+          }
+         }
+
+        </script>
+</body>
+</html>
